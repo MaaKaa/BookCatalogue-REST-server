@@ -21,7 +21,6 @@ public class BookController {
     //Utwórz zmienną tej klasy w kontrolerze, a następnie wstrzyknij ją:
     private MemoryBookService memoryBookService;
 
-    //Dodaj akcję kontrolera, która zwróci listę wszystkich książek:
     @GetMapping("/")
     @ResponseBody
     public List<Book> getAllBooks(){

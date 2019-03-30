@@ -5,11 +5,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
-public class MemoryBookService {
-    //Creation and initialization of a book list:
+public class MemoryBookService implements BookService{
+
     private List<Book> list;
 
     public MemoryBookService() {
@@ -29,11 +28,13 @@ public class MemoryBookService {
         this.list = list;
     }
 
+    @Override
     @GetMapping(path = "/",  produces = "application/json")
     public List<Book> getAllBooks() {
         return getList();
     }
 
+    @Override
     @GetMapping(path = "{id}", produces = "application/json")
     public Book getBookById(@PathVariable(name = "id") long id) {
         Book book = null;
@@ -47,12 +48,14 @@ public class MemoryBookService {
         return book;
     }
 
+    @Override
     @PostMapping(path = "/", produces = "application/json")
     public void addBook(String isbn, String title, String author, String publisher, String type){
         Book newBook = new Book(isbn, title, author, publisher, type);
         list.add(newBook);
     }
 
+    @Override
     @PutMapping(path = "{id}")
     public void updateBook(@PathVariable(name="id") long id, String isbn, String title, String author, String publisher, String type){
         for (Book bookToFind : list){
@@ -69,6 +72,7 @@ public class MemoryBookService {
         }
     }
 
+    @Override
     @DeleteMapping(path = "{id}")
     public void deleteBook(@PathVariable(name="id") long id){
         for (Book bookToFind : list){
