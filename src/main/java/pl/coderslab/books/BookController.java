@@ -1,8 +1,8 @@
-package pl.coderslab.controller;
+package pl.coderslab.books;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pl.coderslab.model.Book;
+import pl.coderslab.books.Book;
 
 @RestController
 @RequestMapping("/books")
