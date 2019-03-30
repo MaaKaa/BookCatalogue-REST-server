@@ -1,4 +1,4 @@
-package pl.marzenakaa.model;
+package pl.coderslab.model;
 
 public class Main {
 
