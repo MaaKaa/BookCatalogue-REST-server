@@ -6,13 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="860ec1d0-c21d-448e-9915-cfb22d798b93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/books/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/books/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/books/MemoryBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/books/MemoryBookService.java" afterDir="false" />
-    </list>
+    <list default="true" id="860ec1d0-c21d-448e-9915-cfb22d798b93" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +19,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -93,7 +87,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,6 +153,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -285,16 +279,25 @@
       <workItem from="1554022009516" duration="925000" />
       <workItem from="1554023305634" duration="215000" />
       <workItem from="1556527990134" duration="2364000" />
+      <workItem from="1556530390438" duration="145000" />
     </task>
+    <task id="LOCAL-00001" summary="MemoryBookService and Book Controller modified.">
+      <created>1556530499054</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556530499055</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19841000" />
+    <option name="totallyTimeSpent" value="19986000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="639" y="52" width="1276" height="1045" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26639345" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27213115" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -317,7 +320,7 @@
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32946634" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" weight="0.32946634" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="15" visible="true" weight="0.32924107" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -331,6 +334,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="MemoryBookService and Book Controller modified." />
+    <option name="LAST_COMMIT_MESSAGE" value="MemoryBookService and Book Controller modified." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/books/Main.java">
