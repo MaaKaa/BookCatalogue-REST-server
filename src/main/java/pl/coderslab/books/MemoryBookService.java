@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
+//Ta klasa jest źródłem danych dla tworzonej biblioteki:
 @Service
 public class MemoryBookService implements BookService{
 
@@ -28,15 +29,11 @@ public class MemoryBookService implements BookService{
         this.list = list;
     }
 
-    @Override
-    @GetMapping(path = "/",  produces = "application/json")
     public List<Book> getAllBooks() {
         return getList();
     }
 
-    @Override
-    @GetMapping(path = "{id}", produces = "application/json")
-    public Book getBookById(@PathVariable(name = "id") long id) {
+    public Book getBookById(long id) {
         Book book = null;
         for (Book bookToFind : list){
             if(bookToFind.getId() == id){
@@ -48,16 +45,12 @@ public class MemoryBookService implements BookService{
         return book;
     }
 
-    @Override
-    @PostMapping(path = "/", produces = "application/json")
     public void addBook(String isbn, String title, String author, String publisher, String type){
         Book newBook = new Book(isbn, title, author, publisher, type);
         list.add(newBook);
     }
 
-    @Override
-    @PutMapping(path = "{id}")
-    public void updateBook(@PathVariable(name="id") long id, String isbn, String title, String author, String publisher, String type){
+    public void updateBook(long id, String isbn, String title, String author, String publisher, String type){
         for (Book bookToFind : list){
             if(bookToFind.getId() == id){
                 bookToFind.setIsbn(isbn);
@@ -72,9 +65,7 @@ public class MemoryBookService implements BookService{
         }
     }
 
-    @Override
-    @DeleteMapping(path = "{id}")
-    public void deleteBook(@PathVariable(name="id") long id){
+    public void deleteBook(long id){
         for (Book bookToFind : list){
             if(bookToFind.getId() == id){
                 list.remove(bookToFind);
